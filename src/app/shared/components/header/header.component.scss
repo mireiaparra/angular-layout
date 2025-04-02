@@ -1,0 +1,33 @@
+.header {
+  padding: 10px 20px;
+  box-shadow: var(--primary-box-shadow);
+  height: 100px;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.site-name {
+  font-family: 'Arsenal SC', serif;
+  font-size: 24px;
+  color: var(--primary-color); 
+}
+
+.username {
+  color: var(--secondary-text-color);
+}
+
+mat-toolbar {
+  background: none;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  gap: 20px;
+}

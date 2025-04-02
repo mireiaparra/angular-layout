@@ -1,0 +1,29 @@
+
+<div class="modal-container"><h2 mat-dialog-title>{{ selectedImage.title }}</h2>
+<mat-dialog-content>
+  <img
+    [src]="selectedImage.src"
+    [alt]="selectedImage.title"
+    [style.width.px]="imageSize"
+    [style.height.px]="imageSize"
+    rotate
+    [rotationAngle]="rotationAngle"
+    [step]="rotationStep"
+    matTooltip="Rotate"
+  />
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="increaseSize()">
+    <mat-icon>zoom_in</mat-icon>
+    Zoom in
+  </button>
+  <button mat-button (click)="decreaseSize()">
+    <mat-icon>zoom_out</mat-icon>
+    Zoom out
+  </button>
+  <button mat-button (click)="close()">
+    <mat-icon>close</mat-icon>
+    Close
+  </button>
+</mat-dialog-actions>
+</div>

@@ -1,0 +1,16 @@
+<div class="page-container">
+<app-header></app-header>
+<div class="app-container">
+  <aside class="sidebar">
+    <ng-container *ngIf="authService.isLogged(); else publicMenu">
+      <app-private-menu></app-private-menu>
+    </ng-container>
+    <ng-template #publicMenu>
+      <app-public-menu></app-public-menu>
+    </ng-template>
+  </aside>
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+</div>
