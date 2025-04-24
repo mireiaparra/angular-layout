@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 8000 -o",
-    "build": "ng build",
+    "build": "--configuration production --base-href /angular-layout/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
