@@ -19,6 +19,7 @@
           "options": {
             "outputPath": "dist",
             "index": "src/index.html",
+            "baseHref": "/angular-layout/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
