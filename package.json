@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve --port 8000 -o",
     "build": "ng build --configuration production --base-href /angular-layout/",
+    "deploy": "gh-pages -d dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
